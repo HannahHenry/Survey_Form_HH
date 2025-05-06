@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+<h1 id="title">Bleach</h1>
+<p id="description"> Welcome to the Bleach survey! <br>Fill out the form below to join the Bleach fan club!</p>
+<form id="survey-form">
+  <section>
+  <label id="name-label">
+     Name:
+  <input id="name" required type="text" placeholder="First Last">
+  </label>
+  </section>
+  <section>
+  <label id="email-label">
+    Email:
+  <input required type="email" id="email" placeholder="someone@email.com">
+  </label>
+  </section>
+  <section>
+  <label id="number-label">
+    Age:
+  <input id="number" required type="number" min="18" max="100" placeholder="22">
+  </label>
+    <section>
+      <section>
+        <fieldset>
+          <legend>Is Kenpachi a villain?</legend>
+            <label><input id="yes" type="radio" name="villain" value="yes" checked>Yes</label>
+          <label><input id="no" type="radio" name="villain" value="no">No</label>
+        </fieldset>
+      </section>
+      <section> 
+        <fieldset>
+          <legend>Who does Ichigo belong with?</legend>
+          <input id="rukia" type="checkbox" name="girl" value="rukia" checked> <label for="rukia">Rukia</label>
+           <input id="orihime" type="checkbox" name="girl" value="orihime"> <label for="oihime">Orihime</label>
+           <input id="nell" type="checkbox" name="girl" value="nell"> <label for="nell">Nell</label>
+        </fieldset>
+        </section>
+      <section>
+        <fieldset>
+          <legend>Which would you rather be?</legend>
+            <label for="features">Choose a power:</label>
+    <select id="dropdown" name="features">
+      <option value="human">Human</option>
+      <option value="soulreaper">Soul Reaper</option>
+      <option value="quincy">Quincy</option>
+    </select>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset>
+          <legend>Who is your favorite character?</legend>
+          <textarea placeholder=ex:GrimmJoww></textarea>
+        </fieldset>
+      </section>
+  <button id="submit" type="submit">Submit form</button>
+  </form>
+  </body>
+</html>
